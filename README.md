@@ -1,12 +1,10 @@
-# Lain's X1 Carbon 1st Gen macOS Repository
+# Stossy11's X1 Carbon 1st Gen macOS Repository
 A repository of information and kexts for running macOS Mojave on the X1 Carbon 1st Generation.
 
-Any discoveries and forks to get full functionality are much appreciated! As of June 28th, 2021, I can no longer provide support on any of this due to no longer having an X1C1 but you can do whatever you want with these files. I'll instead be focusing my efforts on Catalina on the Thinkpad X220. This repository will get occasional updates with ideas, but I can't test anything so be warned.
-
-Lain's X1 Carbon Specs:
-- Model: 3448A47
+Stossy11's X1 Carbon Specs:
+- Model: 3443CTO
 - BIOS: G6ETC5WW (2.85 )
-- CPU: Intel Core i5-3427U @ 1.8 GHz 
+- CPU: Intel Core i7-3667U @ 2.0 GHz 
 - GPU: Intel HD Graphics 4000 
 - RAM: 8GB DDR3L SDRAM 
 - Bluetooth Card: Broadcom Corp. BCM20702 Bluetooth 4.0 [ThinkPad]
@@ -16,20 +14,20 @@ Lain's X1 Carbon Specs:
 Virtually everything except what's listed below.
 
 ## What hopefully works but might not:
-- Wireless. I've added a a new kext to the repository to try thanks to the OpenIntelWireless team (AirportItlwm wrapped in IO80211Family), but I don't have a usable X1C1 to test this on anymore. To my knowledge it SHOULD work as it shares a wireless card (albeit a different connector) with the X220 (Intel Centrino N-6205) that functions with the same kext. If you find the speeds undesirable or unstable, you can replace it with Itlwm instead (remember to make a new OpenCore snapshot whenever you replace kexts!)
+- Wireless. I've added a a new kext to the repository to try thanks to the OpenIntelWireless team (AirportItlwm wrapped in IO80211Family).
 
 ## What Doesn't Work:
 - Microphone and microphone mute button don't register for some reason.
 - Trackpoint works maybe 10% of the time. I have zero idea as to why.
 - Audio usually doesn't work after sleep (requires an SSDT patch + Codec Commander or a program to restart AppleHDA.)
-- You tell me.
+- Upgrading to Catalina / Big Sur / Monterey For Now.
+- Facetime / iMessage / etc.
 
 ## Untested:
-- Facetime / iMessage / etc. (I don't have an iPhone to use iMessage with so YMMV. You'll most likely need an intricate knowledge of modifying your config.plist with valid serial numbers to get either of these to work, as I've never gotten this to work on the first attempt of any Hackintosh.)
+- Facetime / iMessage / etc.
 - Mini-Displayport output
 - Bluetooth Hand-Off
 - Airport
-- Upgrading to Catalina / Big Sur / Monterey (these all SHOULD work in theory but probably require a newer Clover / OpenCore).
 - Lots of other things, I'm sure. 
 
 ## Potential Setbacks (if the recent Wi-Fi kext doesn't work):
